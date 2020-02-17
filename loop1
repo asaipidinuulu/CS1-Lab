@@ -1,0 +1,5 @@
+xValue=7
+y=xValue-0.5
+while (y>0):
+  print(y)
+  y=y-0.5
