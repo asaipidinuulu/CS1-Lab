@@ -1,0 +1,27 @@
+x=int(input("integer:"))
+if x%2==0:
+  print("how does an even number react differently when divided by 2")
+elif x%2!=0:
+  print("how does an odd number react differently when divided by 2 ")
+
+
+x=int(input("integer 4:"))
+if x%4==0:
+  print("this number divides by 4")
+
+x=int(input("num:"))
+y=int(input("dvd"))
+if (x/y)%2==0:
+  print("result is even")
+else:
+  print("not even")
+
+
+x=int(input("int:"))
+if x in range(1,10):
+   print("type other number")
+elif x in range(10,20):
+  print("type string")
+elif x in range(20,100):
+  print("your choice is between 20-100")  
+else: print( "just practicing" )
