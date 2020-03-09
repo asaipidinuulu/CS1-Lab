@@ -2,9 +2,14 @@
 def func1(*argument):
     for i in argument:
         print(i)
-
 func1(12,4,5,6,7)
 func1(56,45,34,7,55)
+
+def func1():
+  str = input()
+  print(len(str))
+print(func1())
+
         
         #2
 def recursive(n): 
@@ -12,13 +17,25 @@ def recursive(n):
     return n 
   else:
     return n + recursive(n - 1) 
-  
-
 print(recursive(10))
   
+def calculateSum(num):
+ if num:
+   return num + calculateSum(num-1)
+ else:
+   return 0
+res = calculateSum(10)
+print(res)
+
         #3
 string="pynative"
 print(string[::2])
+
+def printEveIndexChar(str):
+ for i in range(0, len(str)-1, 2):
+  inputStr = input("Enter String ")
+ print("Printing only even index chars")
+ printEveIndexChar(inputStr)
 
         #4
 ints=[2,45,6,4,34,5,64,3]
