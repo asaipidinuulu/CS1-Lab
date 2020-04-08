@@ -1,0 +1,99 @@
+      #1
+def number0f3s(n): 
+  
+    count = 0
+    while (n > 0): 
+      
+        if (n % 10 == 3): 
+            count = count + 1
+  
+        n = n // 10
+      
+    return count 
+def numberOf3sinRange(n): 
+  count = 0 
+  for i in range(0, n + 1): 
+        count = count + number0f3s(i) 
+  
+  return count 
+print(numberOf3sinRange(100))  
+      
+      
+      #2
+def sum_of_primes(num):
+    isPrime = 1
+    for i in range (2,int(num/2),1):
+        if(num % i == 0):
+            isPrime = 0
+            break
+            return isPrime
+
+        num = int(input("Enter a number : "))
+        flag = 0;
+        i = 2
+        for i in range (2,int(num/2),1):
+            if(sum_of_primes(i) == 1):
+                if(sum_of_primes(num-i) == 1):
+                    print(num,"can be expressed as the sum of",i,"and",num-i)
+                    flag = 1;
+                    if (flag == 0):
+                        print(n,"cannot be expressed as the sum of two prime numbers")
+       
+      
+       #3
+ import numpy as np 
+  
+m , n = 3, 3        
+  
+def row_sum(arr) : 
+  
+    sum = 0
+  
+    print("\nFinding Sum of each row:\n") 
+  
+    for i in range(3) : 
+        for j in range(3) : 
+  
+            sum += arr[i][j] 
+  
+        print("Sum of the row",i,"=",sum) 
+  
+        sum = 0
+  
+  
+def column_sum(arr) : 
+  
+    sum = 0
+  
+    print("\nFinding Sum of each column:\n") 
+  
+    for i in range(3) : 
+        for j in range(3) : 
+  
+            sum += arr[j][i] 
+  
+        print("Sum of the column",i,"=",sum) 
+  
+        sum = 0
+  
+          
+  
+if __name__ == "__main__" : 
+  
+    arr = np.zeros((3, 3)) 
+  
+    x = 1
+      
+    for i in range(m) : 
+        for j in range(n) : 
+            arr[i][j] = x 
+  
+            x += 1
+                  
+    row_sum(arr) 
+  
+    column_sum(arr) 
+    
+          
+          
+   
